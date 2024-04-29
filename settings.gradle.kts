@@ -2,7 +2,6 @@ rootProject.name = "MyApplication"
 
 include(":androidApp")
 include(":shared")
-include(":desktopApp")
 
 pluginManagement {
     repositories {
@@ -10,6 +9,7 @@ pluginManagement {
         mavenCentral()
         google()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        maven("https://jogamp.org/deployment/maven")
     }
 
     plugins {
@@ -36,6 +36,9 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         google()
+        maven(url = "https://jitpack.io")
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        maven(url = "https://download2.dynamsoft.com/maven/aar")
+        maven("https://jogamp.org/deployment/maven")
     }
 }
